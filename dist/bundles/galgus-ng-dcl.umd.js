@@ -1,7 +1,7 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common')) :
-    typeof define === 'function' && define.amd ? define('ngx-dcl', ['exports', '@angular/core', '@angular/common'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['ngx-dcl'] = {}, global.ng.core, global.ng.common));
+    typeof define === 'function' && define.amd ? define('@galgus/ng-dcl', ['exports', '@angular/core', '@angular/common'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory((global.galgus = global.galgus || {}, global.galgus['ng-dcl'] = {}), global.ng.core, global.ng.common));
 }(this, (function (exports, core, common) { 'use strict';
 
     var getInjector = function (viewContainer, bindings) {
@@ -84,4 +84,4 @@
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-//# sourceMappingURL=ngx-dcl.umd.js.map
+//# sourceMappingURL=galgus-ng-dcl.umd.js.map

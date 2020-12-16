@@ -72,4 +72,4 @@ DclModule.decorators = [
  */
 
 export { DclModule, DclComponent as ɵa };
-//# sourceMappingURL=ngx-dcl.js.map
+//# sourceMappingURL=galgus-ng-dcl.js.map

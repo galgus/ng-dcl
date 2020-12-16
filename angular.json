@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-dcl": {
+    "ng-dcl": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-dcl",
+            "outputPath": "dist/ng-dcl",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-dcl:build"
+            "browserTarget": "ng-dcl:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-dcl:build:production"
+              "browserTarget": "ng-dcl:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-dcl:build"
+            "browserTarget": "ng-dcl:build"
           }
         },
         "test": {
@@ -92,7 +92,7 @@
         }
       }
     },
-    "ngx-dcl-e2e": {
+    "ng-dcl-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -100,11 +100,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngx-dcl:serve"
+            "devServerTarget": "ng-dcl:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngx-dcl:serve:production"
+              "devServerTarget": "ng-dcl:serve:production"
             }
           }
         },
@@ -120,5 +120,5 @@
       }
     }
   },
-  "defaultProject": "ngx-dcl"
+  "defaultProject": "ng-dcl"
 }

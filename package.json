@@ -1,21 +1,21 @@
 {
-  "name": "@galgus/ngx-dcl",
+  "name": "@galgus/ng-dcl",
   "version": "2.0.0",
   "private": false,
   "description": "angular dynamic loader component",
-  "homepage": "https://github.com/galgus/ngx-dcl#readme",
+  "homepage": "https://github.com/galgus/ng-dcl#readme",
   "bugs": {
-    "url": "https://github.com/galgus/ngx-dcl/issues"
+    "url": "https://github.com/galgus/ng-dcl/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/galgus/ngx-dcl.git"
+    "url": "git+https://github.com/galgus/ng-dcl.git"
   },
   "license": "GPL-3.0",
   "author": "Jose Antonio Delgado Alfonso <jose.delgado@gaglus.net>",
-  "main": "dist/bundles/ngx-dcl.umd.js",
-  "module": "dist/fesm2015/ngx-dcl.js",
-  "types": "dist/ngx-dcl.d.ts",
+  "main": "dist/bundles/ng-dcl.umd.js",
+  "module": "dist/fesm2015/ng-dcl.js",
+  "types": "dist/ng-dcl.d.ts",
   "scripts": {
     "build": "ng build",
     "e2e": "ng e2e",

@@ -1,6 +1,0 @@
-/**
- * Generated bundle index. Do not edit.
- */
-export * from './public_api';
-export { DclComponent as ɵa } from './src/app/modules/dcl/dcl.component';
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmd4LWRjbC5qcyIsInNvdXJjZVJvb3QiOiIuLi8uLi8iLCJzb3VyY2VzIjpbIm5neC1kY2wudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUFFSCxjQUFjLGNBQWMsQ0FBQztBQUU3QixPQUFPLEVBQUMsWUFBWSxJQUFJLEVBQUUsRUFBQyxNQUFNLHFDQUFxQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBHZW5lcmF0ZWQgYnVuZGxlIGluZGV4LiBEbyBub3QgZWRpdC5cbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL3B1YmxpY19hcGknO1xuXG5leHBvcnQge0RjbENvbXBvbmVudCBhcyDJtWF9IGZyb20gJy4vc3JjL2FwcC9tb2R1bGVzL2RjbC9kY2wuY29tcG9uZW50JzsiXX0=

@@ -1,13 +1,21 @@
 {
-  "name": "ngx-dcl",
+  "name": "@galgus/ng-dcl",
   "version": "2.0.0",
   "private": false,
   "description": "angular dynamic loader component",
+  "homepage": "https://github.com/galgus/ng-dcl#readme",
+  "bugs": {
+    "url": "https://github.com/galgus/ng-dcl/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galgus/ng-dcl.git"
+  },
   "license": "GPL-3.0",
   "author": "Jose Antonio Delgado Alfonso <jose.delgado@gaglus.net>",
-  "main": "bundles/ngx-dcl.umd.js",
-  "module": "fesm2015/ngx-dcl.js",
-  "types": "dist/ngx-dcl.d.ts",
+  "main": "bundles/galgus-ng-dcl.umd.js",
+  "module": "fesm2015/galgus-ng-dcl.js",
+  "types": "dist/ng-dcl.d.ts",
   "lint-staged": {
     "*.ts": [
       "prettier --check 'src/**/*.ts'",
@@ -29,10 +37,10 @@
     "tslib": "^2.0.0",
     "zone.js": "^0.10.3"
   },
-  "es2015": "fesm2015/ngx-dcl.js",
-  "esm2015": "esm2015/ngx-dcl.js",
-  "fesm2015": "fesm2015/ngx-dcl.js",
-  "typings": "ngx-dcl.d.ts",
-  "metadata": "ngx-dcl.metadata.json",
+  "es2015": "fesm2015/galgus-ng-dcl.js",
+  "esm2015": "esm2015/galgus-ng-dcl.js",
+  "fesm2015": "fesm2015/galgus-ng-dcl.js",
+  "typings": "galgus-ng-dcl.d.ts",
+  "metadata": "galgus-ng-dcl.metadata.json",
   "sideEffects": false
 }
