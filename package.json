@@ -13,9 +13,6 @@
   },
   "license": "GPL-3.0",
   "author": "Jose Antonio Delgado Alfonso <jose.delgado@gaglus.net>",
-  "main": "dist/bundles/ng-dcl.umd.js",
-  "module": "dist/fesm2015/ng-dcl.js",
-  "types": "dist/ng-dcl.d.ts",
   "scripts": {
     "build": "ng build",
     "e2e": "ng e2e",

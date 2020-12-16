@@ -13,9 +13,6 @@
   },
   "license": "GPL-3.0",
   "author": "Jose Antonio Delgado Alfonso <jose.delgado@gaglus.net>",
-  "main": "bundles/galgus-ng-dcl.umd.js",
-  "module": "fesm2015/galgus-ng-dcl.js",
-  "types": "dist/ng-dcl.d.ts",
   "lint-staged": {
     "*.ts": [
       "prettier --check 'src/**/*.ts'",
@@ -37,6 +34,8 @@
     "tslib": "^2.0.0",
     "zone.js": "^0.10.3"
   },
+  "main": "bundles/galgus-ng-dcl.umd.js",
+  "module": "fesm2015/galgus-ng-dcl.js",
   "es2015": "fesm2015/galgus-ng-dcl.js",
   "esm2015": "esm2015/galgus-ng-dcl.js",
   "fesm2015": "fesm2015/galgus-ng-dcl.js",
