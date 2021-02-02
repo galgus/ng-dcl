@@ -1,27 +1,33 @@
-# Angular Dynamic Component Loader
+# @galgus/ng-dcl
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+## Build Release
 
-## Development server
+1. Run `npm version` to update **package.json** and **package-lock.json**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+   ```bash
+   npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]
+   ```
 
-## Code scaffolding
+2. Run `npm run packagr` to compile project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+   ```bash
+   npm run packagr
+   ```
 
-## Build
+3. Login to [Github Packages](https://docs.github.com/es/packages/guides/configuring-npm-for-use-with-github-packages)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+   ```bash
+   npm login --scope=@OWNER --registry=https://npm.pkg.github.com
 
-## Running unit tests
+    > Username: USERNAME
+    > Password: TOKEN
+    > Email: PUBLIC-EMAIL-ADDRESS
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. Move to `dist/` directory and publish NPM package
 
-## Running end-to-end tests
+   ```bash
+   cd dist/
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+   npm publish
+   ```
