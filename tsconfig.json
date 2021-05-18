@@ -13,9 +13,9 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es6",
+    "target": "es2015",
     "module": "esnext",
-    "baseUrl": "./",
+    "baseUrl": "src",
     "typeRoots": [
       "node_modules/@types"
     ],

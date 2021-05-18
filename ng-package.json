@@ -3,7 +3,7 @@
   "assets": [
     ".npmrc"
   ],
-  "whitelistedNonPeerDependencies": [
+  "allowedNonPeerDependencies": [
     "angular",
     "core-js",
     "rxjs",
