@@ -9,60 +9,43 @@ import { InitFunc } from '../modules/dcl/dcl.component';
     <br />
     <section>
       <hr />
-      <button (click)="pruebaClick()">Prueba</button>
       <div>
-        {{ dataOut }}
-        <app-dcl [type]="component" [init]="func" [data]="data"></app-dcl>
-        <app-dcl [data]="data2"></app-dcl>
+        <h3>Static Component</h3>
+        <app-dcl [data]="staticData"></app-dcl>
+      </div>
+      <div>
+        <h3>Dynamic Component with output</h3>
+        <app-dcl
+          [type]="component"
+          [init]="initFunction"
+          [data]="initialData"
+        ></app-dcl>
+        <p>Initial data output: {{ newData }}</p>
       </div>
       <br />
     </section>
   `
 })
-export class DCLSectionComponent {
+export class DclSectionComponent {
   public component: any = DemoComponent;
 
-  public func: InitFunc;
-  public data = 1;
+  public initFunction: InitFunc;
+  public initialData = 1;
+  public newData = 1;
 
-  public data2 = 0;
-  public dataOut = 1;
-
-  private _value = 0;
+  public staticData = 0;
 
   constructor() {
-    this.func = this.pruebaInit.bind(this);
+    this.initFunction = this.init.bind(this);
   }
 
-  public pruebaClick() {
-    this.func = this.pruebaInit2.bind(this);
-  }
+  private init(component: ComponentRef<DemoComponent>): void {
+    console.log('Init DemoComponent with data', this.initialData);
 
-  private pruebaInit(component: ComponentRef<any>, data: any): void {
-    console.log(
-      'Private variable value: %d and data: %d',
-      this._value,
-      this.data
-    );
-    component.instance._campo = this.data;
-    console.log(component.instance.cOutput);
-    component.instance.cOutput.subscribe((val: number) => {
-      console.log('emitted: %d', val);
-      this.dataOut = val;
-    });
-  }
-
-  private pruebaInit2(component: ComponentRef<any>, data: any): void {
-    console.log(
-      'Private variable value: %d and data: %d',
-      this._value,
-      this.data
-    );
-    component.instance._campo = this.data;
-    console.log(component.instance.cOutput);
-    component.instance.cOutput.subscribe((val: number) => {
-      console.log('emitted: %d', val);
-      this.data = val;
+    component.instance.field = this.initialData;
+    component.instance.output.subscribe((val: number) => {
+      console.log('Output from DemoComponent: %d', val);
+      this.newData = val;
     });
   }
 }
