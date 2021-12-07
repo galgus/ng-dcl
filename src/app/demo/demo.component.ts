@@ -2,24 +2,23 @@ import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-demo-component',
-  template: '<div (click)="click()">Child {{campo}}</div>'
+  template: `<button (click)="click()">Child {{ field }}</button>`
 })
 export class DemoComponent {
-  // Outputs (Events)
-  @Output() public cOutput: EventEmitter<any> = new EventEmitter();
+  @Output() public output: EventEmitter<any> = new EventEmitter();
 
-  private _campo = 0;
+  private _field = 0;
 
-  get campo(): number {
-    return this._campo;
+  get field(): number {
+    return this._field;
   }
 
-  set campo(campo: number) {
-    this._campo = campo;
-    this.cOutput.emit(this._campo);
+  set field(field: number) {
+    this._field = field;
+    this.output.emit(this._field);
   }
 
   click() {
-    this.campo++;
+    this.field++;
   }
 }
