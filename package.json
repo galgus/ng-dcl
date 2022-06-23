@@ -1,6 +1,6 @@
 {
   "name": "@galgus/ng-dcl",
-  "version": "3.0.5",
+  "version": "14.0.0",
   "private": false,
   "description": "Angular Dynamic Component Loader",
   "homepage": "https://github.com/galgus/ng-dcl#readme",
