@@ -1,6 +1,6 @@
 {
   "name": "@galgus/ng-dcl",
-  "version": "15.1.1",
+  "version": "15.1.2",
   "private": false,
   "description": "Angular Dynamic Component Loader",
   "homepage": "https://github.com/galgus/ng-dcl#readme",
@@ -68,9 +68,5 @@
     "ng-packagr": "15.1.1",
     "prettier": "2.6.2",
     "typescript": "4.9.4"
-  },
-  "engines": {
-    "node": ">=14.20.0 <=16.13.2",
-    "npm": ">=6.14.17 <=8.1.2"
   }
 }
